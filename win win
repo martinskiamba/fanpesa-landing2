@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Fanpesa, Kenya’s top betting platform for sports and casino games. Sign up now for a KSh 500 bonus!">
+    <title>Fanpesa - Bet & Win Big in Kenya!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #1a1a1a;
+        }
+
+        header {
+            background: linear-gradient(to right, #006400, #00cc00);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x700/?betting,kenya') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e03e00;
+            transform: scale(1.05);
+        }
+
+        .countdown {
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+
+        .features {
+            padding: 3rem 1rem;
+            text-align: center;
+            background-color: white;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            padding: 1rem;
+            background: #f4f4f4;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature img {
+            width: 50px;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .register {
+            padding: 3rem 1rem;
+            background: linear-gradient(to right, #006400, #00cc00);
+            color: white;
+            text-align: center;
+        }
+
+        .register h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .register form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .register input {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .register button {
+            background-color: #ff4500;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .register button:hover {
+            background-color: #e03e00;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 0.6rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fanpesa - Kenya’s #1 Betting Platform</h1>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bet, Play, Win with Fanpesa!</h2>
+            <p>Join thousands of Kenyan bettors. Sign up now for a KSh 500 welcome bonus!</p>
+            <div class="countdown" id="countdown">Hurry! Offer ends in: <span id="timer"></span></div>
+            <a href="https://fanpesaplay.com/t62eb06fa" class="cta-button"
